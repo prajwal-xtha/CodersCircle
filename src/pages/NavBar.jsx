@@ -3,14 +3,27 @@ import { useState } from "react";
 const Navbar = () => {
   return(
     <>
-    <nav className="flex justify-between">
-    <div><img src="../../public/logo.png" className="w-25 h-20 pl-6"  /></div>
-      <div className="space-x-19 text-xl font-bold pr-10"><a>ABOUT</a>
-      <a>FEATURE</a>
-      <a>EVENTS</a>
-      <a>LOGIN</a>
-     </div>
-    </nav>
+    <nav class="fixed top-4 left-1/2 -translate-x-1/2 
+            w-[90%] max-w-xl 
+            bg-black/20 backdrop-blur-xl 
+            border border-white/20 
+            shadow-lg 
+            rounded-2xl 
+            px-6 py-3 
+            flex items-center justify-center 
+            z-50 opacity-105 font-bold">
+
+  {/* <h1 class="text-white font-semibold text-lg">
+    GlassNav
+  </h1> */}
+
+  <ul class="flex gap-24 text-white/90">
+    <li class="hover:text-white transition">ABOUT</li>
+    <li class="hover:text-white transition">HOME</li>
+    <li class="hover:text-white transition">CONTACT US</li>
+  </ul>
+</nav>
+
     </>
   )
 };
