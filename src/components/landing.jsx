@@ -6,10 +6,10 @@ function Landing() {
   <source src="../../public/background.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
-      <video autoPlay muted loop playsInline className="absolute top-0 left-0 w-full h-full object-cover">
+      {/* <video autoPlay muted loop playsInline className="absolute top-0 left-0 w-full h-full object-cover">
   <source src="/your-video.mp4" type="video/mp4" />
   Your browser does not support the video tag.
-</video>
+</video> */}
 <div className="z-1 flex flex-col items-center ">
 
         <p className=" flex justify-center h-[40px]  items-center w-[240px] rounded-4xl bg-gray-900 font-bold">
