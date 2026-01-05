@@ -1,64 +1,40 @@
-
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faHome } from "@fortawesome/free-solid-svg-icons";
-import { faCake } from "@fortawesome/free-solid-svg-icons/faCake";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-
 const Navbar = () => {
-  return(
+  return (
     <>
-    <nav class="sm:fixed top-4 left-1/2 -translate-x-1/2 
-            
-            bg-black/20 backdrop-blur-xl 
-            border border-white/20 
-            shadow-lg 
-            rounded-2xl 
-            px-6 py-3 flex hidden
-            sm:flex items-center justify-center 
-            z-50 opacity-105 font-bold">
+      {/* Desktop Navbar */}
+      <nav
+        className="sm:fixed top-4 left-1/2 -translate-x-1/2
+        bg-black/20 backdrop-blur-xl
+        border border-white/20
+        shadow-lg
+        rounded-2xl
+        px-6 py-3 hidden sm:flex items-center justify-center
+        z-50 font-bold"
+      >
+        <ul className="flex gap-24 text-white/90">
+          <li><a href="#home" className="hover:text-white">HOME</a></li>
+          <li><a href="#about" className="hover:text-white">ABOUT</a></li>
+          <li><a href="#feature" className="hover:text-white">FEATURE</a></li>
+          <li><a href="#event" className="hover:text-white">EVENT</a></li>
+        </ul>
+      </nav>
 
-  {/* <h1 class="text-white font-semibold text-lg">
-    GlassNav
-  </h1> */}
-
-  <ul class="flex gap-24 text-white/90">
-  <li>
-          <Link to="/" className="hover:text-white transition">
-            HOME
-          </Link>
-        </li>
-        <li>
-          <Link to="/about" className="hover:text-white transition">
-            ABOUT
-          </Link>
-        </li>
-        <li>
-          <Link to="/feature" className="hover:text-white transition">
-            FEATURE
-          </Link>
-        </li>
-        <li>
-          <Link to="/event" className="hover:text-white transition">
-            EVENT
-          </Link>
-        </li>
-        <li>
-          <Link to="/login" className="hover:text-white transition">
-            LOGIN
-          </Link>
-        </li>
-  </ul>
-</nav>
-<nav className=" text-white sm:hidden flex w-screen h-15 bg-gray-950  text-center items-center justify-between border-b border-white">
-  <h1 className="ml-5"><img src="public/CodersCircleLogo.png" className= "h-10 w-10 rounded-3xl"/></h1>
-  <div className="text-2xl mr-4">
-    <FontAwesomeIcon icon={faBars} />
-  </div>
-</nav>
+      {/* Mobile Navbar */}
+      <nav className="sm:hidden flex w-screen h-14 bg-gray-950 items-center justify-between border-b border-white px-4">
+        <img
+          src="/CodersCircleLogo.png"
+          alt="logo"
+          className="h-10 w-10 rounded-3xl"
+        />
+        <FontAwesomeIcon icon={faBars} className="text-2xl cursor-pointer text-white" />
+      </nav>
+      
     </>
-  )
+  );
 };
 
 export default Navbar;

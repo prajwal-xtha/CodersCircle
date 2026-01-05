@@ -1,15 +1,7 @@
 function Home() {
   return (
     <>
-      <div className="items-center flex justify-center h-screen w-screen bg-gray-950 text-white">
-        {/* <video autoPlay muted loop playsInline className="absolute top-0 left-0 w-full h-full object-cover z-0 blur-sm">
-  <source src="../../public/background.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video> */}
-      {/* <video autoPlay muted loop playsInline className="absolute top-0 left-0 w-full h-full object-cover">
-  <source src="/your-video.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video> */}
+      <div id="home" className="items-center flex justify-center h-screen w-screen bg-gray-950 text-white">
 <div className="z-1 flex flex-col items-center ">
 <p className="flex justify-center items-center sm:h-[40px] sm:w-[290px] mb-6  h-[40px] w-[255px] rounded-3xl border border-blue-200 bg-transparent font-mono sm:text-[15px] text-[13px]">
   <span className="text-blue-200">
