@@ -3,13 +3,14 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHome } from "@fortawesome/free-solid-svg-icons";
 import { faCake } from "@fortawesome/free-solid-svg-icons/faCake";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
   return(
     <>
     <nav class="sm:fixed top-4 left-1/2 -translate-x-1/2 
-            w-[90%] max-w-xl 
+            
             bg-black/20 backdrop-blur-xl 
             border border-white/20 
             shadow-lg 
@@ -23,9 +24,31 @@ const Navbar = () => {
   </h1> */}
 
   <ul class="flex gap-24 text-white/90">
-    <li class="hover:text-white transition">ABOUT</li>
-    <li class="hover:text-white transition">HOME</li>
-    <li class="hover:text-white transition">CONTACT US</li>
+  <li>
+          <Link to="/" className="hover:text-white transition">
+            HOME
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" className="hover:text-white transition">
+            ABOUT
+          </Link>
+        </li>
+        <li>
+          <Link to="/feature" className="hover:text-white transition">
+            FEATURE
+          </Link>
+        </li>
+        <li>
+          <Link to="/event" className="hover:text-white transition">
+            EVENT
+          </Link>
+        </li>
+        <li>
+          <Link to="/login" className="hover:text-white transition">
+            LOGIN
+          </Link>
+        </li>
   </ul>
 </nav>
 <nav className=" text-white sm:hidden flex w-screen h-15 bg-gray-950  text-center items-center justify-between border-b border-white">

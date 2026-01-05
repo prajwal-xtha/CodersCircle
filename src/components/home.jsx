@@ -1,4 +1,4 @@
-function Landing() {
+function Home() {
   return (
     <>
       <div className="items-center flex justify-center h-screen w-screen bg-gray-950 text-white">
@@ -52,4 +52,4 @@ function Landing() {
     </>
   );
 }
-export default Landing;
+export default Home;
