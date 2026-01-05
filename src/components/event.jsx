@@ -11,7 +11,7 @@ function Event() {
     <>
       <div
         id="event"
-        className="mt-10 sm:h-screen sm:w-screen sm:w-screen bg-blue-300 flex items-center flex-col pb-30"
+        className=" sm:h-screen sm:w-screen sm:w-screen bg-blue-300 flex items-center flex-col pb-30"
       >
         <h1 className="sm:text-6xl font-bold text-5xl mb-10 mt-10">Join Our Events</h1>
         <p className="sm:text-3xl sm:w-[700px] text-2xl w-[360px] text-center ">

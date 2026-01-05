@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 function Features(){
 
     return(<>
-        <div id="feature" className="sm:w-screen bg-emerald-700 text-white flex items-center flex-col">
+        <div id="feature" className="sm:w-screen bg-emerald-700 text-white flex items-center flex-col pb-20">
      <h1 className="sm:text-6xl font-bold text-5xl mt-10">What We Offer</h1>
      <p className="sm:text-2xl sm:w-[700px] text-xl mt-6 w-[360px] text-center">Everything you need to level up your coding journey and connect with like-minded developers.</p>
      <div className="flex flex-wrap gap-10 justify-center  items-center mt-20">

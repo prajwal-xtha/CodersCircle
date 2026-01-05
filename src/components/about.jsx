@@ -1,6 +1,6 @@
 function About(){
     return(<>
-<div className="h-screen w-screen bg-cyan-950 text-white pl-8 pt-10">
+<div id="about" className="h-screen w-screen bg-cyan-950 text-white pl-8 pt-10">
 <h1 className="sm:text-6xl text-4xl font-bold text-white">
 Building the Future,<br /> One Line at a Time
 </h1>
